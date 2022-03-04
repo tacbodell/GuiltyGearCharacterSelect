@@ -1,0 +1,153 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Set Custom Font */
+@font-face {
+     font-family: 'Red';
+     src: url(../fonts/Guilty\ Gear\ Xrd\ -\ Fonts/RED.ttf)
+}
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+     font-size: 62.5%;
+}
+body {
+     background-image: url(../images/bg-main.png);
+     background-position: center;
+     background-size: 100% 100%;
+     background-repeat: no-repeat;
+}
+h1, h2 {
+     font-family: 'Red';
+     color: white;
+     text-align: center;
+     cursor: default;
+}
+h1 {
+     font-size: 5rem;
+     letter-spacing: .8rem;
+     margin: 5rem 0;
+}
+h2 {
+     font-size: 3.5rem;
+     letter-spacing: .5rem;
+     margin: 3rem 0;
+}
+#currentCharacterDisplay {
+     display: block;
+     margin: 0 auto;
+     max-width: 100vw;
+     max-height: 50rem;
+}
+
+
+/* Select Character Area */
+footer {
+     background: rgba(38,38,38,.5);
+     padding: 4rem 0;
+}
+#characterSelect {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-around;
+     width: min(80vw, 100.8rem);
+     margin-inline: auto;
+     gap: 2rem;
+}
+.characterSelectItem {
+     height: 8rem;
+     width: 8rem;
+     background-size: cover;
+     background-color: rgba(64,64,64,1);
+     border: solid .2rem black;
+     border-radius: 2rem;
+     border-color: white;
+     cursor: pointer;
+}
+
+/* BUTTON BACKGROUND IMAGES  */
+#jackoButton{
+     background-image: url(../images/jackoHS.png)
+}
+#nagoriyukiButton{
+     background-image: url(../images/nagoriyukiHS.png)
+}
+#milliaButton{
+     background-image: url(../images/milliaHS.png)
+}
+#chippButton{
+     background-image: url(../images/chippHS.png)
+}
+#solButton{
+     background-image: url(../images/solHS.png)
+}
+#kyButton{
+     background-image: url(../images/kyHS.png)
+}
+#mayButton{
+     background-image: url(../images/mayHS.png)
+}
+#zatoButton{
+     background-image: url(../images/zatoHS.png)
+}
+#inoButton{
+     background-image: url(../images/inoHS.png)
+}
+#happyButton{
+     background-image: url(../images/happyHS.png)
+}
+#baikenButton{
+     background-image: url(../images/baikenHS.png)
+}
+#anjiButton{
+     background-image: url(../images/anjiHS.png)
+}
+#leoButton{
+     background-image: url(../images/leoHS.png)
+}
+#faustButton{
+     background-image: url(../images/faustHS.png)
+}
+#axlButton {
+     background-image: url(../images/axlHS.png);
+}
+#potemkinButton{
+     background-image: url(../images/potemkinHS.png)
+}
+#ramlethalButton{
+     background-image: url(../images/ramlethalHS.png)
+}
+#giovannaButton{
+     background-image: url(../images/giovannaHS.png)
+}
+#goldlewisButton{
+     background-image: url(../images/goldlewisHS.png)
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+@media all and (max-width: 320px) {
+     html {
+          font-size: 40%;
+     }
+}
